@@ -9,16 +9,22 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Atlas Geospatial Solutions home">
         <img src="assets/img/logo.svg" alt="Atlas Geospatial Solutions logo" />
         <span class="brand-name">ATLAS<small>GEOSPATIAL SOLUTIONS</small></span>
       </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
-      <nav class="nav">
-        <a href="index.html" class="active">Home</a>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to light mode">
+          <span class="icon" aria-hidden="true">☀️</span><span class="label">Light</span>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
+      </div>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html" class="active" aria-current="page">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="portfolio.html">Portfolio</a>
@@ -27,93 +33,110 @@
     </div>
   </header>
 
-  <section class="hero">
-    <img class="hero-img" src="assets/img/hero.svg" alt="" aria-hidden="true" />
-    <div class="container hero-overlay">
-      <h1>Uncrewed systems for <span class="accent">geospatial intelligence</span></h1>
-      <p class="lead">
-        Atlas Geospatial Solutions captures the world from above and beyond — turning
-        drones, sensors, and data into measurable, decision-ready insight for your projects.
-      </p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="portfolio.html">View Our Work</a>
-        <a class="btn btn-ghost" href="contact.html">Start a Project</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">What we do</p>
-        <h2>Capabilities built around uncrewed systems</h2>
-        <p>From the first flight to the final model, we handle the full pipeline of aerial and geospatial data capture and processing.</p>
-      </div>
-      <div class="grid grid-3">
-        <div class="card">
-          <div class="icon">🛰️</div>
-          <h3>Photogrammetry</h3>
-          <p>Survey-grade orthomosaics, point clouds, and elevation models from overlapping aerial imagery.</p>
-        </div>
-        <div class="card">
-          <div class="icon">🔍</div>
-          <h3>Aerial Inspections</h3>
-          <p>Close-up structural, infrastructure, and rooftop inspections with safe, repeatable flights.</p>
-        </div>
-        <div class="card">
-          <div class="icon">📷</div>
-          <h3>Aerial Photography</h3>
-          <p>Cinematic and still aerial imagery for marketing, documentation, and storytelling.</p>
-        </div>
-        <div class="card">
-          <div class="icon">🧊</div>
-          <h3>3D Modeling</h3>
-          <p>Reality capture and textured 3D meshes for planning, visualization, and analysis.</p>
-        </div>
-        <div class="card">
-          <div class="icon">🎮</div>
-          <h3>FPV Flying & Instruction</h3>
-          <p>Dynamic FPV flight for unique perspectives, plus hands-on instruction for new pilots.</p>
-        </div>
-        <div class="card">
-          <div class="icon">🎓</div>
-          <h3>UAV Operation Instruction</h3>
-          <p>Training and certification support to help your team operate safely and compliantly.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">By the numbers</p>
-        <h2>Ready for real-world missions</h2>
-      </div>
-      <div class="stats">
-        <div class="stat"><div class="num">6+</div><div class="label">Service offerings</div></div>
-        <div class="stat"><div class="num">100%</div><div class="label">Field-tested workflows</div></div>
-        <div class="stat"><div class="num">UAV</div><div class="label">Air systems today</div></div>
-        <div class="stat"><div class="num">UGV/USV</div><div class="label">Roadmap ahead</div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container split">
-      <div>
-        <p class="eyebrow">Where we're headed</p>
-        <h2>Growing into uncrewed vehicle development</h2>
-        <p>
-          Atlas began with aerial data capture, but our longer-term vision is to design and
-          build our own uncrewed platforms — UAV (air), UGV (ground), USV (surface), and
-          UUG (underground) — tailored to the missions our customers actually fly.
+  <main id="main">
+    <section class="hero">
+      <img class="hero-img" src="assets/img/hero.svg" alt="" aria-hidden="true" />
+      <div class="container hero-overlay">
+        <h1>Uncrewed systems for <span class="accent">geospatial intelligence</span></h1>
+        <p class="lead">
+          Atlas Geospatial Solutions captures the world from above and beyond — turning
+          drones, sensors, and data into measurable, decision-ready insight for your projects.
         </p>
-        <p><a class="btn btn-ghost" href="about.html">Learn about the company</a></p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="portfolio.html">View Our Work</a>
+          <a class="btn btn-ghost" href="contact.html">Start a Project</a>
+        </div>
       </div>
-      <img src="assets/img/project-placeholder.svg" alt="Illustration of uncrewed systems roadmap" />
-    </div>
-  </section>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">What we do</p>
+          <h2>Capabilities built around uncrewed systems</h2>
+          <p>From the first flight to the final model, we handle the full pipeline of aerial and geospatial data capture and processing.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="icon" aria-hidden="true">🛰️</div>
+            <h3>Photogrammetry</h3>
+            <p>Survey-grade orthomosaics, point clouds, and elevation models from overlapping aerial imagery.</p>
+          </div>
+          <div class="card">
+            <div class="icon" aria-hidden="true">🔍</div>
+            <h3>Aerial Inspections</h3>
+            <p>Close-up structural, infrastructure, and rooftop inspections with safe, repeatable flights.</p>
+          </div>
+          <div class="card">
+            <div class="icon" aria-hidden="true">📷</div>
+            <h3>Aerial Photography</h3>
+            <p>Cinematic and still aerial imagery for marketing, documentation, and storytelling.</p>
+          </div>
+          <div class="card">
+            <div class="icon" aria-hidden="true">🧊</div>
+            <h3>3D Modeling</h3>
+            <p>Reality capture and textured 3D meshes for planning, visualization, and analysis.</p>
+          </div>
+          <div class="card">
+            <div class="icon" aria-hidden="true">🎮</div>
+            <h3>FPV Flying & Instruction</h3>
+            <p>Dynamic FPV flight for unique perspectives, plus hands-on instruction for new pilots.</p>
+          </div>
+          <div class="card">
+            <div class="icon" aria-hidden="true">🎓</div>
+            <h3>UAV Operation Instruction</h3>
+            <p>Training and certification support to help your team operate safely and compliantly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">By the numbers</p>
+          <h2>Ready for real-world missions</h2>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="num">6+</div><div class="label">Service offerings</div></div>
+          <div class="stat"><div class="num">100%</div><div class="label">Field-tested workflows</div></div>
+          <div class="stat"><div class="num">UAV</div><div class="label">Air systems today</div></div>
+          <div class="stat"><div class="num">UGV/USV/UUV</div><div class="label">Roadmap ahead</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Credentials</p>
+          <h2>Certified &amp; current</h2>
+          <ul>
+            <li><strong>FAA Part 107</strong> — current remote pilot certification</li>
+            <li><strong>AUVSI TOP Level 3</strong> — current Trusted Operator Program certification</li>
+          </ul>
+          <p>We also offer <strong>Part 107 coaching</strong> and <strong>AUVSI TOP program coaching</strong> to help new and advancing operators earn and level up their credentials.</p>
+        </div>
+        <img src="assets/img/project-placeholder.svg" alt="Illustration of uncrewed systems roadmap" />
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Where we're headed</p>
+          <h2>Growing into uncrewed vehicle development</h2>
+          <p>
+            Atlas began with aerial data capture, but our longer-term vision is to design and
+            build our own uncrewed platforms — UAV (air), UGV (ground), USV (surface), and
+            UUV (underwater) — tailored to the missions our customers actually fly.
+          </p>
+          <p><a class="btn btn-ghost" href="about.html">Learn about the company</a></p>
+        </div>
+        <img src="assets/img/project-placeholder.svg" alt="Illustration of uncrewed vehicle development roadmap" />
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">

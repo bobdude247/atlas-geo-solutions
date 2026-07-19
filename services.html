@@ -4,109 +4,137 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services — Atlas Geospatial Solutions</title>
-  <meta name="description" content="Services: photogrammetry, aerial inspections, aerial photography, 3D modeling, FPV flying & instruction, UAV operation instruction, and uncrewed vehicle development." />
+  <meta name="description" content="Services: photogrammetry, aerial inspections, aerial photography, 3D modeling, FPV and UAV instruction, Part 107 and AUVSI TOP coaching, and uncrewed vehicle development." />
   <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Atlas Geospatial Solutions home">
         <img src="assets/img/logo.svg" alt="Atlas Geospatial Solutions logo" />
         <span class="brand-name">ATLAS<small>GEOSPATIAL SOLUTIONS</small></span>
       </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
-      <nav class="nav">
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to light mode">
+          <span class="icon" aria-hidden="true">☀️</span><span class="label">Light</span>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
+      </div>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="services.html" class="active">Services</a>
+        <a href="services.html" class="active" aria-current="page">Services</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">Services</p>
-        <h2>What Atlas can do for you</h2>
-        <p>
-          A full pipeline of uncrewed data capture and processing — and the training to help
-          your own team do it. Replace the placeholder descriptions with your real offerings.
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Services</p>
+          <h2>What Atlas can do for you</h2>
+          <p>
+            A full pipeline of uncrewed data capture and processing — plus the training and
+            coaching to help your own team do it. Replace the placeholder descriptions with your
+            real offerings.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="icon" aria-hidden="true">🛰️</div>
+            <h3>Photogrammetry</h3>
+            <p>Orthomosaics, digital elevation models, and dense point clouds from aerial surveys for planning and measurement.</p>
+          </div>
+          <div class="card">
+            <div class="icon" aria-hidden="true">🔍</div>
+            <h3>Aerial Inspections</h3>
+            <p>Structural, rooftop, tower, and infrastructure inspections with detailed imagery and annotated reports.</p>
+          </div>
+          <div class="card">
+            <div class="icon" aria-hidden="true">📷</div>
+            <h3>Aerial Photography</h3>
+            <p>High-resolution stills and cinematic aerial footage for marketing, real estate, and documentation.</p>
+          </div>
+          <div class="card">
+            <div class="icon" aria-hidden="true">🧊</div>
+            <h3>3D Modeling</h3>
+            <p>Reality-capture meshes and textured models for visualization, BIM, and volumetric analysis.</p>
+          </div>
+          <div class="card">
+            <div class="icon" aria-hidden="true">🎮</div>
+            <h3>FPV Flying & Instruction</h3>
+            <p>Dynamic first-person-view flight for unique shots, plus one-on-one coaching for new FPV pilots.</p>
+          </div>
+          <div class="card">
+            <div class="icon" aria-hidden="true">🎓</div>
+            <h3>UAV Operation Instruction</h3>
+            <p>Safety, regulation, and flight-skills training to get operators certified and mission-ready.</p>
+          </div>
+        </div>
+
+        <div class="section-head" style="margin-top: 60px;">
+          <p class="eyebrow">Certification coaching</p>
+          <h2>Get certified with confidence</h2>
+          <p>We are current Part 107 remote pilots and AUVSI TOP Level 3 operators, and we coach others to earn and advance these credentials.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <span class="tag">Coaching</span>
+            <h3>Part 107 Coaching</h3>
+            <p>Structured preparation for the FAA Remote Pilot knowledge exam — regulations, airspace, weather, and operations — built around your schedule.</p>
+          </div>
+          <div class="card">
+            <span class="tag">Coaching</span>
+            <h3>AUVSI TOP Program Coaching</h3>
+            <p>Guidance through the AUVSI Trusted Operator Program framework to document and advance your operational maturity and safety practices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Coming soon</p>
+          <h2>Uncrewed Vehicle Development</h2>
+          <p>
+            As the company grows, we plan to design and build custom uncrewed platforms. This
+            section is a placeholder for future capabilities.
+          </p>
+        </div>
+        <div class="grid grid-2">
+          <div class="card">
+            <span class="tag">UAV</span>
+            <h3>Custom Aerial Platforms</h3>
+            <p>Tailored multirotor and fixed-wing airframes for specialized payloads and missions.</p>
+          </div>
+          <div class="card">
+            <span class="tag">UGV / USV / UUV</span>
+            <h3>Ground, Surface & Underwater</h3>
+            <p>Development of ground, surface, and underwater vehicles for inspection and survey.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="text-align:center;">
+        <h2>Not sure which service you need?</h2>
+        <p style="color:var(--muted);max-width:560px;margin:0 auto 24px;">
+          Tell us about your project and we'll recommend the right platform, sensors, and deliverables.
         </p>
+        <a class="btn btn-primary" href="contact.html">Get in touch</a>
       </div>
-
-      <div class="grid grid-3">
-        <div class="card">
-          <div class="icon">🛰️</div>
-          <h3>Photogrammetry</h3>
-          <p>Orthomosaics, digital elevation models, and dense point clouds from aerial surveys for planning and measurement.</p>
-        </div>
-        <div class="card">
-          <div class="icon">🔍</div>
-          <h3>Aerial Inspections</h3>
-          <p>Structural, rooftop, tower, and infrastructure inspections with detailed imagery and annotated reports.</p>
-        </div>
-        <div class="card">
-          <div class="icon">📷</div>
-          <h3>Aerial Photography</h3>
-          <p>High-resolution stills and cinematic aerial footage for marketing, real estate, and documentation.</p>
-        </div>
-        <div class="card">
-          <div class="icon">🧊</div>
-          <h3>3D Modeling</h3>
-          <p>Reality-capture meshes and textured models for visualization, BIM, and volumetric analysis.</p>
-        </div>
-        <div class="card">
-          <div class="icon">🎮</div>
-          <h3>FPV Flying & Instruction</h3>
-          <p>Dynamic first-person-view flight for unique shots, plus one-on-one coaching for new FPV pilots.</p>
-        </div>
-        <div class="card">
-          <div class="icon">🎓</div>
-          <h3>UAV Operation Instruction</h3>
-          <p>Safety, regulation, and flight-skills training to get operators certified and mission-ready.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">Coming soon</p>
-        <h2>Uncrewed Vehicle Development</h2>
-        <p>
-          As the company grows, we plan to design and build custom uncrewed platforms. This
-          section is a placeholder for future capabilities.
-        </p>
-      </div>
-      <div class="grid grid-2">
-        <div class="card">
-          <span class="tag">UAV</span>
-          <h3>Custom Aerial Platforms</h3>
-          <p>Tailored multirotor and fixed-wing airframes for specialized payloads and missions.</p>
-        </div>
-        <div class="card">
-          <span class="tag">UGV / USV / UUG</span>
-          <h3>Ground, Surface & Underground</h3>
-          <p>Development of ground, surface, and subsurface vehicles for inspection and survey.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container" style="text-align:center;">
-      <h2>Not sure which service you need?</h2>
-      <p style="color:var(--muted);max-width:560px;margin:0 auto 24px;">
-        Tell us about your project and we'll recommend the right platform, sensors, and deliverables.
-      </p>
-      <a class="btn btn-primary" href="contact.html">Get in touch</a>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
