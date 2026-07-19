@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Portfolio placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1120"/>
+      <stop offset="1" stop-color="#0e1a2b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <g fill="none" stroke="#1e293b" stroke-width="1.5">
+    <path d="M0 100 H800 M0 200 H800 M0 300 H800 M0 400 H800"/>
+    <path d="M160 0 V500 M320 0 V500 M480 0 V500 M640 0 V500"/>
+  </g>
+  <circle cx="400" cy="230" r="70" fill="none" stroke="#22d3ee" stroke-width="4" opacity="0.7"/>
+  <path d="M340 250 L390 200 L420 230 L470 175" fill="none" stroke="#22d3ee" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <text x="400" y="350" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#94a3b8" font-weight="600">PROJECT IMAGE</text>
+  <text x="400" y="380" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#64748b">Replace with your work</text>
+</svg>

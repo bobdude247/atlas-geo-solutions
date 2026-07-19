@@ -1,0 +1,7 @@
+title: Atlas Geospatial Solutions
+description: Portfolio of uncrewed-systems work — photogrammetry, aerial inspections, photography, 3D modeling, FPV and UAV instruction.
+baseurl: ""
+url: "https://bobdude247.github.io"
+markdown: kramdown
+exclude:
+  - PLAN.md
